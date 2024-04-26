@@ -15,30 +15,36 @@ class MainApp extends StatelessWidget {
       home: Scaffold(
         body: Row(
           children: [
-            Center(
-              child: SizedBox(
-                height: 100,
-                width: 300,
-                child: VACard(
-                  cardModel: ReusableCardModel(elevation: 10),
+            Expanded(
+              child: Center(
+                child: SizedBox(
+                  height: 100,
+                  width: 300,
+                  child: VACard(
+                    cardModel: ReusableCardModel(elevation: 10),
+                  ),
                 ),
               ),
             ),
-            Center(
-              child: SizedBox(
-                height: 100,
-                width: 300,
-                child: VACard(
-                  cardModel: ReusableCardModel(elevation: 1),
+            Expanded(
+              child: Center(
+                child: SizedBox(
+                  height: 100,
+                  width: 300,
+                  child: VACard(
+                    cardModel: ReusableCardModel(elevation: 1),
+                  ),
                 ),
               ),
             ),
-            Center(
-              child: SizedBox(
-                height: 100,
-                width: 300,
-                child: VACard(
-                  cardModel: ReusableCardModel(elevation: 0),
+            Expanded(
+              child: Center(
+                child: SizedBox(
+                  height: 100,
+                  width: 300,
+                  child: VACard(
+                    cardModel: ReusableCardModel(elevation: 0),
+                  ),
                 ),
               ),
             ),
