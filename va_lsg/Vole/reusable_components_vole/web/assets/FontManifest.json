@@ -1,0 +1,13 @@
+[
+    {
+        "family": "Montserrat",
+        "fonts": [
+            {
+                "asset": "Montserrat-regular.ttf"
+            },
+            {
+                "asset": "Montserrat-Bold.ttf"
+            }
+        ]
+    }
+]
