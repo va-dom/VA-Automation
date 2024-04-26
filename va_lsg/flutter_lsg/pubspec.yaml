@@ -30,6 +30,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  va_reusable_components:
+    git:
+      url: https://github.com/va-dom/VA-Reusable-Components.git
+      ref: 15eedf094ceda17b848cbe247c127a68067ee47c
 
 
   # The following adds the Cupertino Icons font to your application.
