@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_lsg/components/elevated_button_demo.dart';
 import 'package:flutter_lsg/components/primary_button_demo.dart';
 import 'package:flutter_lsg/components/secondary_button_demo.dart';
@@ -27,7 +28,6 @@ class LSGHome extends StatelessWidget {
       body: Column(
         children: [
           Expanded(
-            flex: 1,
             child: Center(
               child: VAAvatar(
                 imageUrl: "",
@@ -35,6 +35,82 @@ class LSGHome extends StatelessWidget {
                 subtitle: "Flutter Developers",
                 onLogout: () => _handleLogout(context),
                 onProfileSettings: () => _handleProfileSettings(context),
+              ),
+            ),
+          ),
+          Expanded(
+            child: Center(
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Center(
+                      child: SizedBox(
+                        height: 100,
+                        width: 600,
+                        child: VaTextFormFieldOutlined(
+                            labelText: 'Enabled TextFormField',
+                            placeholder: "Hi, I'm a placeholder",
+                            helperText: "I'm the helper text",
+                            bottomMargin: 8,
+                            controller: textController),
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    child: Center(
+                      child: SizedBox(
+                        height: 100,
+                        width: 600,
+                        child: VaTextFormFieldOutlined(
+                            enabled: false,
+                            labelText: 'Disabled TextFormField',
+                            placeholder: "Testing in your area",
+                            helperText: "I'm the helper text",
+                            bottomMargin: 8,
+                            controller: textController),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Expanded(
+            child: Center(
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Center(
+                      child: SizedBox(
+                        height: 100,
+                        width: 600,
+                        child: VaTextFormFieldOutlined(
+                            leadingIcon: const Icon(Icons.search),
+                            labelText:
+                                'Enabled TextFormField with Leading Icon',
+                            placeholder: "Testing in your area",
+                            helperText: "I'm the helper text",
+                            controller: textController),
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    child: Center(
+                      child: SizedBox(
+                        height: 100,
+                        width: 600,
+                        child: VaTextFormFieldOutlined(
+                            enabled: false,
+                            leadingIcon: const Icon(Icons.search),
+                            labelText:
+                                'Disabled TextFormField with Leading Icon',
+                            placeholder: "Testing in your area",
+                            helperText: "I'm the helper text",
+                            controller: textController),
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ),
           ),
@@ -74,12 +150,14 @@ class LSGHome extends StatelessWidget {
             ),
           ),
           Expanded(
+            flex: 1,
             child: Center(
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
                   Expanded(
+                    flex: 1,
                     child: Center(
                       child: SizedBox(
                         height: 100,
@@ -97,6 +175,7 @@ class LSGHome extends StatelessWidget {
                     ),
                   ),
                   Expanded(
+                    flex: 1,
                     child: Center(
                       child: SizedBox(
                         height: 100,
@@ -114,6 +193,7 @@ class LSGHome extends StatelessWidget {
                     ),
                   ),
                   Expanded(
+                    flex: 1,
                     child: Center(
                       child: SizedBox(
                         height: 100,
@@ -131,6 +211,7 @@ class LSGHome extends StatelessWidget {
                     ),
                   ),
                   Expanded(
+                    flex: 1,
                     child: Center(
                       child: SizedBox(
                         height: 100,
@@ -149,46 +230,6 @@ class LSGHome extends StatelessWidget {
                   ),
                 ],
               ),
-            ),
-          ),
-          Expanded(
-            child: Column(
-              children: [
-                Row(children: [
-                  VaTextFormFieldOutlined(
-                      labelText: 'Enabled TextFormField',
-                      placeholder: "Hi, I'm a placeholder",
-                      helperText: "I'm the helper text",
-                      bottomMargin: 8,
-                      controller: textController),
-                  const SizedBox(width: 24.0),
-                  VaTextFormFieldOutlined(
-                      enabled: false,
-                      labelText: 'Disabled TextFormField',
-                      placeholder: "Testing in your area",
-                      helperText: "I'm the helper text",
-                      bottomMargin: 8,
-                      controller: textController),
-                ]),
-                Row(
-                  children: [
-                    VaTextFormFieldOutlined(
-                        leadingIcon: const Icon(Icons.search),
-                        labelText: 'Enabled TextFormField with Leading Icon',
-                        placeholder: "Testing in your area",
-                        helperText: "I'm the helper text",
-                        controller: textController),
-                    const SizedBox(width: 24.0),
-                    VaTextFormFieldOutlined(
-                        enabled: false,
-                        leadingIcon: const Icon(Icons.search),
-                        labelText: 'Disabled TextFormField with Leading Icon',
-                        placeholder: "Testing in your area",
-                        helperText: "I'm the helper text",
-                        controller: textController),
-                  ],
-                )
-              ],
             ),
           ),
         ],
@@ -214,3 +255,72 @@ void _handleProfileSettings(BuildContext context) {
     ),
   );
 }
+
+
+//  Expanded(
+//             child: Row(
+//               mainAxisAlignment: MainAxisAlignment.center,
+//               crossAxisAlignment: CrossAxisAlignment.center,
+//               children: [
+//                 Center(
+//                   child: SizedBox(
+//                     height: 100,
+//                     width: 500,
+//                     child: VaTextFormFieldOutlined(
+//                         labelText: 'Enabled TextFormField',
+//                         placeholder: "Hi, I'm a placeholder",
+//                         helperText: "I'm the helper text",
+//                         bottomMargin: 8,
+//                         controller: textController),
+//                   ),
+//                 ),
+//                 Center(
+//                   child: SizedBox(
+//                     height: 100,
+//                     width: 500,
+//                     child: VaTextFormFieldOutlined(
+//                         enabled: false,
+//                         labelText: 'Disabled TextFormField',
+//                         placeholder: "Testing in your area",
+//                         helperText: "I'm the helper text",
+//                         bottomMargin: 8,
+//                         controller: textController),
+//                   ),
+//                 ),
+//               ],
+//             ),
+//           ),
+//           Expanded(
+//             child: Row(
+//               mainAxisAlignment: MainAxisAlignment.center,
+//               crossAxisAlignment: CrossAxisAlignment.center,
+//               children: [
+//                 Center(
+//                   child: SizedBox(
+//                     height: 100,
+//                     width: 500,
+//                     child: VaTextFormFieldOutlined(
+//                         leadingIcon: const Icon(Icons.search),
+//                         labelText: 'Enabled TextFormField with Leading Icon',
+//                         placeholder: "Testing in your area",
+//                         helperText: "I'm the helper text",
+//                         controller: textController),
+//                   ),
+//                 ),
+//                 Center(
+//                   child: SizedBox(
+//                     height: 100,
+//                     width: 500,
+//                     child: VaTextFormFieldOutlined(
+//                         enabled: false,
+//                         leadingIcon: const Icon(Icons.search),
+//                         labelText: 'Disabled TextFormField with Leading Icon',
+//                         placeholder: "Testing in your area",
+//                         helperText: "I'm the helper text",
+//                         controller: textController),
+//                   ),
+//                 ),
+//               ],
+//             ),
+//           ),
+        

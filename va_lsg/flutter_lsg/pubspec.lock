@@ -196,8 +196,8 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: "03de8560d680ac03df8194994813941d75b23547"
-      resolved-ref: "03de8560d680ac03df8194994813941d75b23547"
+      ref: "0c3f1fd9a6d6bb49e0e40093371277cfd2db1b9d"
+      resolved-ref: "0c3f1fd9a6d6bb49e0e40093371277cfd2db1b9d"
       url: "https://github.com/va-dom/VA-Reusable-Components.git"
     source: git
     version: "0.0.1"
