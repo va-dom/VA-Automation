@@ -33,7 +33,7 @@ dependencies:
   va_reusable_components:
     git:
       url: https://github.com/va-dom/VA-Reusable-Components.git
-      ref: 15eedf094ceda17b848cbe247c127a68067ee47c
+      ref: 03de8560d680ac03df8194994813941d75b23547
 
 
   # The following adds the Cupertino Icons font to your application.

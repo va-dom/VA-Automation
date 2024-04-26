@@ -192,6 +192,15 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.6.1"
+  va_reusable_components:
+    dependency: "direct main"
+    description:
+      path: "."
+      ref: "03de8560d680ac03df8194994813941d75b23547"
+      resolved-ref: "03de8560d680ac03df8194994813941d75b23547"
+      url: "https://github.com/va-dom/VA-Reusable-Components.git"
+    source: git
+    version: "0.0.1"
   vector_math:
     dependency: transitive
     description:
@@ -210,3 +219,4 @@ packages:
     version: "13.0.0"
 sdks:
   dart: ">=3.3.3 <4.0.0"
+  flutter: ">=1.17.0"
